@@ -14,14 +14,14 @@ void draw() {
   rectMode(CENTER);
   // Draw Zoog's body
   stroke(0);
-  fill(150);
+  fill(0, mouseX, 0);
   rect(mouseX, mouseY, 20, 100);
   // Draw Zoog's head
   stroke(0);
-  fill(255);
+  fill(mouseY, mouseY, mouseX);
   ellipse(mouseX, mouseY - 30, 60, 60);
   // Draw Zoog's eyes
-  fill(0);
+  fill(mouseY, mouseX, mouseY);
 
   // remove the forward slashes in front of each line of code below one at a time. Remove the underline and replace with the proper code to allow your mouse to move Zoog around  💻
 
